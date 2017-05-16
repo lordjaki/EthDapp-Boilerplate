@@ -32,7 +32,7 @@
             web3.eth.getBalance(contractAddress,function(error,response) {
                 $("#contractBalance").text(response);
                 console.log("error: " + error + ", " + "response: " + response);
-            }
+            });
             // Now you can start your app & access web3 freely:
 
             // do whatever you want to here!
