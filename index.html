@@ -7,7 +7,10 @@
     <body>
         <h1>Welcome to web3 - looking like web1!</h1>
         <div id="content">Can I has web3?!</div>
-        <h3>hello world</h3>
+        Address of the ico contract: <div id="contractAddress"></div>
+        you address: <div id="yourAddress"></div>
+        contract balance: <div id="contractBalance"></div>
+        current balance: <div id="yourBalance"></div>
         <img src="./ani_what.gif" alt="WHATEVER MAKES YOU HAPPY" width="300" height="50" border="0">
         <script>
             window.addEventListener('load', function() {
@@ -23,7 +26,7 @@
                 // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
                 window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
             }
-
+            var contractAddress = "0xF5A1543FD8c29c4538F57ABcd747abeFF4d74a3F";
             // Now you can start your app & access web3 freely:
 
             // do whatever you want to here!
